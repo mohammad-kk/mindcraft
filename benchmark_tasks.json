@@ -1,0 +1,34 @@
+{
+  "resource_gathering": {
+    "description": "Gather specific resources within time limit",
+    "objective": "Collect 10 wood logs, 5 stone blocks, and 3 coal within 5 minutes",
+    "success_criteria": "Player inventory contains required items",
+    "time_limit": 300,
+    "starting_items": [],
+    "environment": "forest"
+  },
+  "structure_building": {
+    "description": "Build a specific structure following instructions",
+    "objective": "Build a 4x4 house with walls, roof, door, and at least one window",
+    "success_criteria": "Structure matches specifications",
+    "time_limit": 600,
+    "starting_items": ["64 oak_planks", "16 glass", "1 oak_door"],
+    "environment": "plains"
+  },
+  "combat_survival": {
+    "description": "Survive combat encounters with hostile mobs",
+    "objective": "Survive for 10 minutes during night time with at least 3 hostile mob kills",
+    "success_criteria": "Player survives with required kills",
+    "time_limit": 600,
+    "starting_items": ["1 iron_sword", "1 shield"],
+    "environment": "plains"
+  },
+  "problem_solving": {
+    "description": "Solve a complex problem requiring planning",
+    "objective": "Cross a lava pit, retrieve a chest item, and return safely",
+    "success_criteria": "Player obtains target item and returns to starting position",
+    "time_limit": 900,
+    "starting_items": ["10 dirt", "5 stone", "1 water_bucket"],
+    "environment": "custom_lava_challenge"
+  }
+}

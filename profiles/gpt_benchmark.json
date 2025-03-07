@@ -1,0 +1,6 @@
+{
+  "name": "GPT4o_Benchmark",
+  "model": "openai/gpt-4o",
+  "max_tokens": 4000,
+  "embedding": "openai"
+}

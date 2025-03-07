@@ -1,0 +1,54 @@
+{
+  "models": [
+    {
+      "name": "GPT-4o",
+      "profile": "./profiles/gpt_benchmark.json",
+      "description": "OpenAI's GPT-4o model"
+    },
+    {
+      "name": "Claude 3 Opus",
+      "profile": "./profiles/claude_benchmark.json",
+      "description": "Anthropic's Claude 3 Opus model"
+    },
+    {
+      "name": "Llama 3.3 70B",
+      "profile": "./profiles/llama_benchmark.json",
+      "description": "Meta's Llama 3.3 70B model via Groq"
+    },
+    {
+      "name": "Mistral Large",
+      "profile": "./profiles/mistral_benchmark.json",
+      "description": "Mistral AI's Large model"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "resource_gathering",
+      "description": "Gather specific resources within time limit",
+      "difficulty": "easy"
+    },
+    {
+      "id": "structure_building",
+      "description": "Build a specific structure following instructions",
+      "difficulty": "medium"
+    },
+    {
+      "id": "combat_survival",
+      "description": "Survive combat encounters with hostile mobs",
+      "difficulty": "hard"
+    },
+    {
+      "id": "problem_solving",
+      "description": "Solve a complex problem requiring planning",
+      "difficulty": "hard"
+    }
+  ],
+  "metrics": [
+    "task_completion_rate",
+    "time_to_completion",
+    "code_generation_attempts",
+    "code_execution_success_rate",
+    "tokens_consumed"
+  ],
+  "runs_per_task": 3
+}

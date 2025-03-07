@@ -1,0 +1,6 @@
+{
+  "name": "Llama_Benchmark",
+  "model": "groq/llama-3.3-70b-versatile",
+  "max_tokens": 4000,
+  "embedding": "openai"
+}

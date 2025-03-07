@@ -1,0 +1,6 @@
+{
+  "name": "Mistral_Benchmark",
+  "model": "mistral/mistral-large-latest",
+  "max_tokens": 4000,
+  "embedding": "openai"
+}

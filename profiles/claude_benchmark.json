@@ -1,0 +1,6 @@
+{
+  "name": "Claude_Benchmark",
+  "model": "anthropic/claude-3-opus-20240229",
+  "max_tokens": 4000,
+  "embedding": "openai"
+}
