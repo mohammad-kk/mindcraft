@@ -5,9 +5,11 @@ import { hideBin } from 'yargs/helpers';
 import { createMindServer } from './src/server/mind_server.js';
 import { mainProxy } from './src/process/main_proxy.js';
 import { readFileSync } from 'fs';
+// Add this near the top of the file with other imports
+import CivilizationManager from './src/agent/civilization/civilization_manager.js';
 
 function parseArguments() {
-    return yargs(hideBin(process.argv))
+    const argv = yargs(hideBin(process.argv))
         .option('profiles', {
             type: 'array',
             describe: 'List of agent profile paths',
@@ -20,9 +22,15 @@ function parseArguments() {
             type: 'string',
             describe: 'Task ID to execute'
         })
-        .help()
-        .alias('help', 'h')
+        .option('civilization', {
+            alias: 'civ',
+            type: 'string',
+            description: 'Path to civilization configuration file'
+        })
         .parse();
+
+    // Add this after the server initialization but before agent initialization
+    // This woul
 }
 
 function getProfiles(args) {

@@ -1,0 +1,50 @@
+{
+  "name": "TestCivilization",
+  "description": "A test civilization with different agent roles",
+  "population_limit": 20,
+  "roles": [
+    {
+      "name": "gatherer",
+      "description": "Collects resources for the civilization",
+      "base_profile": "./profiles/llama.json",
+      "count": 5,
+      "tasks": ["resource_gathering"],
+      "modes": {
+        "hunting": false,
+        "building": false,
+        "exploring": true
+      }
+    },
+    {
+      "name": "builder",
+      "description": "Constructs buildings and infrastructure",
+      "base_profile": "./profiles/mistral.json",
+      "count": 3,
+      "tasks": ["structure_building"],
+      "modes": {
+        "hunting": false,
+        "building": true,
+        "exploring": false
+      }
+    },
+    {
+      "name": "defender",
+      "description": "Protects the civilization from threats",
+      "base_profile": "./profiles/freeguy.json",
+      "count": 2,
+      "tasks": ["combat_survival"],
+      "modes": {
+        "hunting": true,
+        "building": false,
+        "exploring": false
+      }
+    }
+  ],
+  "central_location": {
+    "x": 0,
+    "y": 64,
+    "z": 0
+  },
+  "resource_sharing": true,
+  "communication_enabled": true
+}
